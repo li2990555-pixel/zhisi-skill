@@ -193,13 +193,20 @@ cp -r SKILL.md references scripts ~/.claude/skills/zhisi-skill/
 
 使用：在对话中输入 `/zhisi-skill` 或"帮我分析一下论文论证"。
 
-### ChatGPT / DeepSeek / Gemini / Kimi 等平台
+### ChatGPT / DeepSeek / Gemini / Kimi / Coze 等平台
 
 这些平台没有 Skill 系统，需使用精简版 `SKILL-lite.md`（已剥离 Claude 专属指令，纯 Prompt 格式）。
 
 1. 下载 `SKILL-lite.md`
-2. 将全部内容粘贴到平台的自定义指令 / 系统提示词中
+2. 将全部内容粘贴到平台的系统提示词中：
+   - **ChatGPT** → 设置 → Custom instructions
+   - **DeepSeek** → 系统提示 / 自定义指令
+   - **Gemini** → 设置 → System instructions
+   - **Kimi** → 系统提示 / 预设
+   - **Coze** → Bot 编辑 → 人设与回复逻辑
 3. 开始对话即可使用
+
+> 💡 **Coze 进阶**：还可将 `references/` 下的学科模板文件上传到 Bot 的知识库，分析时自动检索规则，效果更佳。
 
 > ⚠️ 与 Claude Code 版的区别：核心分析能力一致（论证检测、大纲设计、仪表盘等），但无法自动读写文件和并行分析。请手动分章节输入，建议将分析结果复制到笔记中保存。
 
