@@ -193,7 +193,7 @@ cp -r SKILL.md references scripts ~/.claude/skills/zhisi-skill/
 
 使用：在对话中输入 `/zhisi-skill` 或"帮我分析一下论文论证"。
 
-### ChatGPT / DeepSeek / Gemini / Kimi / Coze 等平台
+### ChatGPT / DeepSeek / Gemini / Kimi / Coze / Cursor / OpenClaw 等平台
 
 这些平台没有 Skill 系统，需使用精简版 `SKILL-lite.md`（已剥离 Claude 专属指令，纯 Prompt 格式）。
 
@@ -204,6 +204,8 @@ cp -r SKILL.md references scripts ~/.claude/skills/zhisi-skill/
    - **Gemini** → 设置 → System instructions
    - **Kimi** → 系统提示 / 预设
    - **Coze** → Bot 编辑 → 人设与回复逻辑
+   - **Cursor** → 项目 `.cursorrules` 或设置 → Rules
+   - **OpenClaw** → 系统提示 / 自定义指令
 3. 开始对话即可使用
 
 > 💡 **Coze 进阶**：还可将 `references/` 下的学科模板文件上传到 Bot 的知识库，分析时自动检索规则，效果更佳。
