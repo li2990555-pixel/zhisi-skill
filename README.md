@@ -193,7 +193,7 @@ cp -r SKILL.md references scripts ~/.claude/skills/zhisi-skill/
 
 使用：在对话中输入 `/zhisi-skill` 或"帮我分析一下论文论证"。
 
-### ChatGPT / DeepSeek / Gemini / Kimi / Coze / Cursor / OpenClaw 等平台
+### ChatGPT / DeepSeek / Gemini / Kimi / Coze / OpenClaw 等平台
 
 这些平台没有 Skill 系统，需使用精简版 `SKILL-lite.md`（已剥离 Claude 专属指令，纯 Prompt 格式）。
 
@@ -204,13 +204,23 @@ cp -r SKILL.md references scripts ~/.claude/skills/zhisi-skill/
    - **Gemini** → 设置 → System instructions
    - **Kimi** → 系统提示 / 预设
    - **Coze** → Bot 编辑 → 人设与回复逻辑
-   - **Cursor** → 项目 `.cursorrules` 或设置 → Rules
    - **OpenClaw** → 系统提示 / 自定义指令
 3. 开始对话即可使用
 
 > 💡 **Coze 进阶**：还可将 `references/` 下的学科模板文件上传到 Bot 的知识库，分析时自动检索规则，效果更佳。
 
 > ⚠️ 与 Claude Code 版的区别：核心分析能力一致（论证检测、大纲设计、仪表盘等），但无法自动读写文件和并行分析。请手动分章节输入，建议将分析结果复制到笔记中保存。
+
+### Cursor
+
+Cursor 支持 Rules 配置，可将织思写作助手设为 AI 的默认行为规范。
+
+1. 下载 `SKILL-lite.md`
+2. 打开 Cursor 设置 → **Rules** → 将内容粘贴到 **User Rules**（全局生效）或 **Project Rules**（当前项目生效）
+3. 也可创建 `.cursorrules` 文件放入项目根目录
+4. 在 Chat / Composer 中直接描述需求即可使用
+
+> 在 Cursor 中使用时，AI 会自动遵循织思的分析规则和输出格式。建议配合项目级 Rules 使用，效果最佳。
 
 ---
 
